@@ -57,11 +57,17 @@ Microsoft Sentinel helps you enable end-to-end security operations. Including co
 <br>
 
 ## Create an Azure Virtual Machine
+Make sure to create a Resource Group before creating Virtual Machine.
+- **Resource Group:** HoneypotLab
+- **Name:** Honeypot-vm
+- **Region:** US East 2
+- **Size:** Standard D2as v4 (2 vcpus, 8 GiB memory)
+
 
 <p align="center"> 
 <img src="https://imgur.com/9diVHlc.png" height="80%" width="80%" alt="SIEM"/>
 
-- Create Inbound Rule within Network Security Group to observe Brute Force attacks into the VM (This will allow anything into the VM):
+- Create Inbound Rule within **Network Security Group (NSG)** to observe Brute Force attacks into the VM (This will open all ports and allow all network traffic into the VM):
 
 <p align="center"> 
 <img src="https://imgur.com/9hz1vUN.png" height="50%" width="40%" alt="SIEM"/>
