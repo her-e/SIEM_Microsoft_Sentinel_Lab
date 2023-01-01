@@ -1,4 +1,4 @@
-## Microsoft Sentinel(SIEM) World Map RDP Failure
+## Microsoft Sentinel (SIEM) World Map RDP Failure
 ## Description *
 In this lab, I am going to configure NTFS permissions by adding security groups and partitioning drives in order to map drives using Group Policy. The purpose of this lab will ensure users can access folders based on their least privileged access. Configuring and running this lab will help develop our understanding how NTFS permissions, Security Group, and Group Policy works. I will also configure user account with identity and Access regarding location and job titles.
 
