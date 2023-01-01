@@ -52,7 +52,7 @@ Microsoft Sentinel helps you enable end-to-end security operations. Including co
 <img src="https://imgur.com/azGVweJ.png" height="85%" width="85%" alt="MS Sentinel"/>
 
 
-[Source](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-sentinel/2-what-is-azure-sentinel)
+[Source: Microsoft](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-sentinel/2-what-is-azure-sentinel)
 
 <br>
 
