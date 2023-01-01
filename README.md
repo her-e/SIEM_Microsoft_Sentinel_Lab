@@ -49,7 +49,7 @@ Microsoft Sentinel is tightly integrated with other cloud services. Not only can
 Microsoft Sentinel helps you enable end-to-end security operations. Including collection, detection, investigation, and response:
 
 <p align="center">
-<img src="https://imgur.com/azGVweJ.png" height="85%" width="85%" alt="MS Sentinel"/>
+<img src="https://imgur.com/azGVweJ.png" height="85%" width="85%" alt="SIEM"/>
 
 
 [Source: Microsoft](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-sentinel/2-what-is-azure-sentinel)
@@ -59,12 +59,12 @@ Microsoft Sentinel helps you enable end-to-end security operations. Including co
 ## Create an Azure Virtual Machine
 
 <p align="center"> 
-<img src="https://imgur.com/9diVHlc.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/9diVHlc.png" height="80%" width="80%" alt="SIEM"/>
 
 - Create Inbound Rule within Network Security Group to observe Brute Force attacks into the VM (This will allow anything into the VM):
 
 <p align="center"> 
-<img src="https://imgur.com/9hz1vUN.png" height="50%" width="40%" alt="Active Directory"/>
+<img src="https://imgur.com/9hz1vUN.png" height="50%" width="40%" alt="SIEM"/>
 
 
 ## Create Log Analytics Workspace
@@ -75,26 +75,26 @@ Create Log Analytics Workspace to ingest Windows Event Logs from Azure Virtual M
 - In this case, we will assign resource group "HoneypotLab", Name "law-honeypot", Region "East US 2"
 
 <p align="center"> 
-<img src="https://imgur.com/cDLHIwh.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/cDLHIwh.png" height="80%" width="80%" alt="SIEM"/>
 
 - Enable Logs in "Microsoft Defender for Cloud" to enable the ability to gather logs from Azure Virtual Machine into "Log Analytics Workspace".
 
 **Steps: Microsoft Defender for Cloud > Environment Settings > (Select Logs Analytics Workspace) > Enable All, but disable SQL Servers on Machines.**
 
 <p align="center"> 
-<img src="https://imgur.com/aSeuUO9.png" height="80%" width="80%" alt="Active Directory"/>
-<img src="https://imgur.com/WHNMDXQ.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/aSeuUO9.png" height="80%" width="80%" alt="SIEM"/>
+<img src="https://imgur.com/WHNMDXQ.png" height="80%" width="80%" alt="SIEM"/>
 
 After this step, connect Log Analytics Workspace with the Virtual Machine.
 
 ## Configure Microsoft Sentinel 
 Add Log Analytics Workspace into Microsoft Sentinel.
 <p align="center"> 
-<img src="https://imgur.com/56oQQ16.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/56oQQ16.png" height="80%" width="80%" alt="SIEM"/>
 
 - Run PowerShell Script to Geo data from attackers within Virtual Machine.
 <p align="center"> 
-<img src="https://imgur.com/ByHFtub.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/ByHFtub.png" height="80%" width="80%" alt="SIEM"/>
 
 - Create Custom Log in Log Analytics Workspace.
 - Create Custom Fields/Extract Fields to create fields to input in World Map data.
@@ -104,16 +104,16 @@ Add Log Analytics Workspace into Microsoft Sentinel.
 Check Security for Windows Log and filter current log for EventID 4625 to analyze log on failure attempts.
 
 <p align="center"> 
-<img src="https://imgur.com/dL7fRcT.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/dL7fRcT.png" height="80%" width="80%" alt="SIEM"/>
 
 ## World Map Failed RDP Brute Force Attacks After 1 hour.
 
 <p align="center"> 
-<img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="SIEM"/>
 
 ## World Map Failed RDP Brute Force Attacks After 10 hours.
 
 <p align="center"> 
-<img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="SIEM"/>
 
 ## Conclusion
