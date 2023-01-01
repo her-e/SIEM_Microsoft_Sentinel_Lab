@@ -56,6 +56,34 @@ Microsoft Sentinel helps you enable end-to-end security operations. Including co
 
 <br>
 
+## Create an Azure Virtual Machine
 
+<p align="center"> 
+<img src="https://imgur.com/9diVHlc.png" height="80%" width="80%" alt="Active Directory"/>
+
+## Create Log Analytics Workspace
+
+Create Log Analytics Workspace to ingest Windows Event Logs from Azure Virtual Machine. 
+<br/>
+**Steps: Create Logs Analytics Workspace > Assign Resource Groups, Name, Region.**
+- In this case, we will assign resource group "HoneypotLab", Name "law-honeypot", Region "East US 2"
+
+<p align="center"> 
+<img src="https://imgur.com/cDLHIwh.png" height="80%" width="80%" alt="Active Directory"/>
+
+- Enable Logs in "Microsoft Defender for Cloud" to enable the ability to gather logs from Azure Virtual Machine into "Log Analytics Workspace".
+
+**Steps: Microsoft Defender for Cloud > Environment Settings > (Select Logs Analytics Workspace) > Enable All, but disable SQL Servers on Machines.**
+
+<p align="center"> 
+<img src="https://imgur.com/aSeuUO9.png" height="80%" width="80%" alt="Active Directory"/>
+<img src="https://imgur.com/WHNMDXQ.png" height="80%" width="80%" alt="Active Directory"/>
+
+After this step, connect Log Analytics Workspace with the Virtual Machine.
+
+## Configure Microsoft Sentinel 
+Add Log Analytics Workspace into Microsoft Sentinel.
+<p align="center"> 
+<img src="https://imgur.com/56oQQ16.png" height="80%" width="80%" alt="Active Directory"/>
 
 ## Conclusion
