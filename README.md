@@ -37,7 +37,22 @@ A SIEM system might offer functionality such as:
 
 ## What is Microsoft Sentinel?
 
-[Source](https://www.datto.com/blog/what-is-ntfs-and-how-does-it-work)
+Microsoft Sentinel is a cloud-native SIEM system that a security operations team can use to:
+
+Get security insights across the enterprise by collecting data from virtually any source.
+Detect and investigate threats quickly using built-in machine learning and Microsoft threat intelligence.
+Automate threat responses by using playbooks and by integrating Azure Logic Apps.
+Unlike traditional SIEM solutions, to run Microsoft Sentinel, you do not need to install any servers either on-premises or in the cloud. Microsoft Sentinel is a service that you deploy in Azure. You can get up and running with Sentinel in just a few minutes in the Azure portal.
+
+Microsoft Sentinel is tightly integrated with other cloud services. Not only can you quickly ingest logs, but you can also use other cloud services natively (for example, authorization and automation).
+
+Microsoft Sentinel helps you enable end-to-end security operations. Including collection, detection, investigation, and response:
+
+<p align="center">
+<img src="https://imgur.com/azGVweJ.png" height="85%" width="85%" alt="MS Sentinel"/>
+
+
+[Source](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-sentinel/2-what-is-azure-sentinel)
 
 <br>
 
