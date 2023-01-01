@@ -61,6 +61,12 @@ Microsoft Sentinel helps you enable end-to-end security operations. Including co
 <p align="center"> 
 <img src="https://imgur.com/9diVHlc.png" height="80%" width="80%" alt="Active Directory"/>
 
+- Create Inbound Rule within Network Security Group to observe Brute Force attacks into the VM (This will allow anything into the VM):
+
+<p align="center"> 
+<img src="https://imgur.com/9hz1vUN.png" height="50%" width="40%" alt="Active Directory"/>
+
+
 ## Create Log Analytics Workspace
 
 Create Log Analytics Workspace to ingest Windows Event Logs from Azure Virtual Machine. 
@@ -85,5 +91,29 @@ After this step, connect Log Analytics Workspace with the Virtual Machine.
 Add Log Analytics Workspace into Microsoft Sentinel.
 <p align="center"> 
 <img src="https://imgur.com/56oQQ16.png" height="80%" width="80%" alt="Active Directory"/>
+
+- Run PowerShell Script to Geo data from attackers within Virtual Machine.
+<p align="center"> 
+<img src="https://imgur.com/ByHFtub.png" height="80%" width="80%" alt="Active Directory"/>
+
+- Create Custom Log in Log Analytics Workspace.
+- Create Custom Fields/Extract Fields to create fields to input in World Map data.
+- Set up Map in Microsoft Sentinel within Worknooks and assign values and data based on Custom Fields.
+
+## Event Viewer
+Check Security for Windows Log and filter current log for EventID 4625 to analyze log on failure attempts.
+
+<p align="center"> 
+<img src="https://imgur.com/dL7fRcT.png" height="80%" width="80%" alt="Active Directory"/>
+
+## World Map Failed RDP Brute Force Attacks After 1 hour.
+
+<p align="center"> 
+<img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="Active Directory"/>
+
+## World Map Failed RDP Brute Force Attacks After 10 hours.
+
+<p align="center"> 
+<img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="Active Directory"/>
 
 ## Conclusion
