@@ -114,9 +114,18 @@ Add Log Analytics Workspace into Microsoft Sentinel.
 <p align="center"> 
 <img src="https://imgur.com/ByHFtub.png" height="80%" width="80%" alt="SIEM"/>
 
-- Create Custom Log in Log Analytics Workspace.
+- Use Kusto Query Language (KQL) to identify Security EventID 4625 (Failed Log on Attempts)
+<p align="center"> 
+<img src="https://imgur.com/sZfxKsu.png" height="80%" width="80%" alt="SIEM"/>
+
+- Create Custom Log in Log Analytics Workspace to communicate file path for failed RDP files from Azure Virtual Machine. (Powershell Script generates a file for failed RDP attempts.)
 - Create Custom Fields/Extract Fields to create fields to input in World Map data.
-- Set up Map in Microsoft Sentinel within Worknooks and assign values and data based on Custom Fields.
+- Set up Map using Kusto Query Language (KQL) in Microsoft Sentinel within Workbooks and assign values and data based on Custom Fields.
+
+Query to map data:<br/>
+FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, Latitude_CF, Longitude_CF, Country_CF, label_CF, destinationhost_CF
+| where destinationhost_CF != "samplehost"
+| where sourcehost_CF != ""
 
 ## Windows Event Viewer
 Check Security for Windows Log and filter current log for EventID 4625 to analyze log on failure attempts.
