@@ -6,7 +6,7 @@ In this lab, I am going to create a Honeypot to lure attackers to my Azure Virtu
 
 Lab Results:
 <p align="center">
-<img src="https://imgur.com/E7Xnv4Z.png" height="85%" width="85%" alt="SIEM"/>
+<img src="https://imgur.com/wzWlTvG.png" height="85%" width="85%" alt="SIEM"/>
 <br>
 
 ## Important:
