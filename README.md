@@ -277,9 +277,11 @@ Further steps:
 - Set up Map using Kusto Query Language (KQL) in Microsoft Sentinel within Workbooks and assign values and data based on Custom Fields.
 
 Query to map data:<br/>
+```
 FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, Latitude_CF, Longitude_CF, Country_CF, label_CF, destinationhost_CF
 | where destinationhost_CF != "samplehost"
-| where sourcehost_CF != ""
+| where sourcehost_CF != "" 
+```
 
 ## Windows Event Viewer
 Check Security for Windows Log and filter current log for EventID 4625 to analyze log on failure attempts on Virtual Machine.
