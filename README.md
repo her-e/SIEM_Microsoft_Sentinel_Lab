@@ -1,4 +1,4 @@
-## Microsoft Azure Sentinel (SIEM) World Map RDP Failure
+## Microsoft Azure Sentinel (SIEM) - World Map with live Cyberattacks (RDP Brute-force)
 ## Description *
 In this lab, I am going to configure Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines. This lab will use Kusto Query Language, Powershell, Microsoft Azure, Third-Party API, Network Security Group, Just-in-time (JIT) access, and more. This lab is inspired by Josh Madakor and all credit goes to him. Here is a link to his channel. The purpose of conducting this lab is to understand Microsoft Azure resources by creating a cloud detection environment with Azure Virtual Machines and Logs to analyze Brute-force attacks. 
 
@@ -269,8 +269,8 @@ Use Kusto Query Language (KQL) to identify Security EventID 4625 (Failed Log on 
 <img src="https://imgur.com/sZfxKsu.png" height="80%" width="80%" alt="SIEM"/>
 
 Further steps:
-- Create Custom Log in Log Analytics Workspace to communicate file path for failed RDP files from Azure Virtual Machine. (Powershell Script generates a file for failed RDP attempts.)
-- Create Custom Fields/Extract Fields to create fields to input in World Map data.
+- Create **"Custom Log"** in Log Analytics Workspace to communicate file path for failed RDP files from Azure Virtual Machine. (Powershell Script generates a file for failed RDP attempts.)
+- Create **"Custom Fields/Extract Fields"** to create fields to input in World Map data.
 - Set up Map using Kusto Query Language (KQL) in Microsoft Sentinel within Workbooks and assign values and data based on Custom Fields.
 
 Query to map data:<br/>
