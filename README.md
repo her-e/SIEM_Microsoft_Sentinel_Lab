@@ -1,8 +1,7 @@
 ## Microsoft Azure Sentinel (SIEM) World Map RDP Failure
 ## Description *
-In this lab, I am going to configure NTFS permissions by adding security groups and partitioning drives in order to map drives using Group Policy. The purpose of this lab will ensure users can access folders based on their least privileged access. Configuring and running this lab will help develop our understanding how NTFS permissions, Security Group, and Group Policy works. I will also configure user account with identity and Access regarding location and job titles.
+In this lab, I am going to configure Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines. 
 
-In this lab, I have already created a domain controller on a virtual machine that has two network adapters. This will connect to our outside internet by NAT and the other network adapter (NIC) will connect to our VirtualBox private network. This will allow our client's PC to connect to the internet through the domain controller. This will allow us to apply Group Policy Objects and provision, maintain, and deprovision users in Active Directory.
 
 
 <p align="center">
@@ -77,6 +76,15 @@ Azure Security Feature: The creation of the virtual machine places our VM into a
 <p align="center"> 
 <img src="https://imgur.com/9hz1vUN.png" height="50%" width="40%" alt="SIEM"/>
 
+Port exposed to the internet due to NSG inbound rule:
+- RDP port 3389 
+- SSH port 22
+- MS SQL DB port 1433
+- Oracle DB port 1521
+- Mysql DB port 3306
+- Postgres DB port 5432
+- etc.
+
 ## Create Log Analytics Workspace
 
 Create Log Analytics Workspace to ingest Windows Event Logs from Azure Virtual Machine. 
@@ -110,7 +118,7 @@ Add Log Analytics Workspace into Microsoft Sentinel.
 - Create Custom Fields/Extract Fields to create fields to input in World Map data.
 - Set up Map in Microsoft Sentinel within Worknooks and assign values and data based on Custom Fields.
 
-## Event Viewer
+## Windows Event Viewer
 Check Security for Windows Log and filter current log for EventID 4625 to analyze log on failure attempts.
 
 <p align="center"> 
