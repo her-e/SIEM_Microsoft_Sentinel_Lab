@@ -1,6 +1,6 @@
 ## Microsoft Azure Sentinel (SIEM) World Map RDP Failure
 ## Description *
-In this lab, I am going to configure Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines. This lab will use Kusto Query Language, Powershell, Microsoft Azure, Third-Party API, Network Security Group, Just-in-time (JIT) access, and more. This lab is inspired by Josh Madakor and all credit goes to him. Here is a link to his channel. 
+In this lab, I am going to configure Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines. This lab will use Kusto Query Language, Powershell, Microsoft Azure, Third-Party API, Network Security Group, Just-in-time (JIT) access, and more. This lab is inspired by Josh Madakor and all credit goes to him. Here is a link to his channel. The purpose of conducting this lab is to understand Microsoft Azure resources by creating a cloud detection environment with Azure Virtual Machines and Logs by analyzing Brute-force attacks. 
 
 [Youtube: Josh Madakor](https://www.youtube.com/@JoshMadakor)
 
