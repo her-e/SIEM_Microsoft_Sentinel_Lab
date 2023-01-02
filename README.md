@@ -1,6 +1,6 @@
-## Microsoft Azure Sentinel (SIEM) - World Map with live Cyberattacks (RDP Brute-force)
-## Description *
-In this lab, I am going to configure Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines. This lab will use Kusto Query Language, Powershell, Microsoft Azure, Third-Party API, Network Security Group, Just-in-time (JIT) access, and more. This lab is inspired by Josh Madakor and all credit goes to him. Here is a link to his channel. The purpose of conducting this lab is to understand Microsoft Azure resources by creating a cloud detection environment with Azure Virtual Machines and Logs to analyze Brute-force attacks. 
+## Microsoft Azure Sentinel (SIEM) - World Map with live Cyberattacks
+## Description
+In this lab, I am going to create a Honeypot to lure attackers to my Azure Virtual Machine. This is an intentionally compromised system that allows attackers to exploit vulnerabilities for the sole purpose to study incidents. This lab will require the use of Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines, Kusto Query Language, Powershell, Third-Party API, Network Security Group, Just-in-time (JIT) access, and more. The purpose of conducting this lab is to understand Microsoft Azure resources by creating a cloud detection environment with Azure Virtual Machines and Logs to analyze Brute-force attacks. This lab is inspired by Josh Madakor and all credit goes to him. Here is a link to his channel.
 
 [Youtube: Josh Madakor](https://www.youtube.com/@JoshMadakor)
 
