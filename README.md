@@ -92,7 +92,10 @@ Create Log Analytics Workspace to ingest Windows Event Logs from Azure Virtual M
 <br/>
 **Steps: Create Logs Analytics Workspace > Assign Resource Groups, Name, Region.**
   
-In this case, we will assign resource group "HoneypotLab", Name "law-honeypot", Region "East US 2"
+In this case, we will assign...
+- **Resource Group:** HoneypotLab 
+- **Name:** law-honeypot 
+- **Region:** East US 2
 
 <p align="center"> 
 <img src="https://imgur.com/cDLHIwh.png" height="80%" width="80%" alt="SIEM"/>
