@@ -84,7 +84,7 @@ Port exposed to the internet due to NSG inbound rule:
 - Oracle DB port 1521
 - Mysql DB port 3306
 - Postgres DB port 5432
-- etc.
+- etc. (All Ports)
 
 ## Create Log Analytics Workspace
 
