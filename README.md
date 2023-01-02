@@ -71,7 +71,7 @@ Make sure to create a Resource Group before creating Virtual Machine.
 
 Azure Security Feature: The creation of the virtual machine places our VM into a Virtual Network (vnet), which our Virtual machine is assigned an IP Address and Network Interface. We will use Network Security Group (NSG) to filter network traffic on Azure resources. Our Network Security Group will be based on dictating source and destination and network ports that are allowed or denied.
 
-- Create Inbound Rule within **Network Security Group (NSG)** to observe Brute-force attacks into the VM (This will open all ports and allow all network traffic into the VM):
+Create Inbound Rule within **Network Security Group (NSG)** to observe Brute-force attacks into the VM (This will open all ports and allow all network traffic into the VM):
 
 <p align="center"> 
 <img src="https://imgur.com/9hz1vUN.png" height="50%" width="40%" alt="SIEM"/>
@@ -90,12 +90,13 @@ Port exposed to the internet due to NSG inbound rule:
 Create Log Analytics Workspace to ingest Windows Event Logs from Azure Virtual Machine. 
 <br/>
 **Steps: Create Logs Analytics Workspace > Assign Resource Groups, Name, Region.**
-- In this case, we will assign resource group "HoneypotLab", Name "law-honeypot", Region "East US 2"
+  
+In this case, we will assign resource group "HoneypotLab", Name "law-honeypot", Region "East US 2"
 
 <p align="center"> 
 <img src="https://imgur.com/cDLHIwh.png" height="80%" width="80%" alt="SIEM"/>
 
-- Enable Logs in "Microsoft Defender for Cloud" to enable the ability to gather logs from Azure Virtual Machine into "Log Analytics Workspace".
+Enable Logs in "Microsoft Defender for Cloud" to enable the ability to gather logs from Azure Virtual Machine into "Log Analytics Workspace".
 
 **Steps: Microsoft Defender for Cloud > Environment Settings > (Select Logs Analytics Workspace) > Enable All, but disable SQL Servers on Machines.**
 
@@ -110,14 +111,15 @@ Add Log Analytics Workspace into Microsoft Sentinel.
 <p align="center"> 
 <img src="https://imgur.com/56oQQ16.png" height="80%" width="80%" alt="SIEM"/>
 
-- Run PowerShell Script to Geo data from attackers within Virtual Machine.
+Run PowerShell Script to Geo data from attackers within Virtual Machine.
 <p align="center"> 
 <img src="https://imgur.com/ByHFtub.png" height="80%" width="80%" alt="SIEM"/>
 
-- Use Kusto Query Language (KQL) to identify Security EventID 4625 (Failed Log on Attempts)
+Use Kusto Query Language (KQL) to identify Security EventID 4625 (Failed Log on Attempts)
 <p align="center"> 
 <img src="https://imgur.com/sZfxKsu.png" height="80%" width="80%" alt="SIEM"/>
 
+Further steps:
 - Create Custom Log in Log Analytics Workspace to communicate file path for failed RDP files from Azure Virtual Machine. (Powershell Script generates a file for failed RDP attempts.)
 - Create Custom Fields/Extract Fields to create fields to input in World Map data.
 - Set up Map using Kusto Query Language (KQL) in Microsoft Sentinel within Workbooks and assign values and data based on Custom Fields.
@@ -128,7 +130,7 @@ FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, Latitud
 | where sourcehost_CF != ""
 
 ## Windows Event Viewer
-Check Security for Windows Log and filter current log for EventID 4625 to analyze log on failure attempts.
+Check Security for Windows Log and filter current log for EventID 4625 to analyze log on failure attempts on Virtual Machine.
 
 <p align="center"> 
 <img src="https://imgur.com/dL7fRcT.png" height="80%" width="80%" alt="SIEM"/>
