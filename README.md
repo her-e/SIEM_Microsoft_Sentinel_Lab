@@ -1,9 +1,12 @@
-## Microsoft Sentinel (SIEM) World Map RDP Failure
+## Microsoft Azure Sentinel (SIEM) World Map RDP Failure
 ## Description *
 In this lab, I am going to configure NTFS permissions by adding security groups and partitioning drives in order to map drives using Group Policy. The purpose of this lab will ensure users can access folders based on their least privileged access. Configuring and running this lab will help develop our understanding how NTFS permissions, Security Group, and Group Policy works. I will also configure user account with identity and Access regarding location and job titles.
 
 In this lab, I have already created a domain controller on a virtual machine that has two network adapters. This will connect to our outside internet by NAT and the other network adapter (NIC) will connect to our VirtualBox private network. This will allow our client's PC to connect to the internet through the domain controller. This will allow us to apply Group Policy Objects and provision, maintain, and deprovision users in Active Directory.
 
+
+<p align="center">
+<img src=".png" height="85%" width="85%" alt="SIEM"/>
 <br>
 
 ## Important:
@@ -123,7 +126,7 @@ Check Security for Windows Log and filter current log for EventID 4625 to analyz
 <p align="center"> 
 <img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="SIEM"/>
 
-## Security Concerns, just-in-time access
+## Security Concerns, just-in-time (JIT) access
 Although we openned all ports through the Network Security Group (NSG) for this Microsoft Cloud Detection Lab (SIEM) to observe Brute-force attacks, we can reduce the attack surface by applying the just-in-time (JIT) access and re-configuring the Network Security Group to only enable certain ports.
 
 The JIT security feature will only provide access when neccesarry based on time-based restrictions, RBAC roles, and Least Priviledge Principles.
@@ -136,9 +139,10 @@ Microsoft Defender for Cloud > Workload Protection > Just-in-time VM access > No
 <p align="center"> 
 <img src="https://imgur.com/H75QpAw.png" height="80%" width="80%" alt="SIEM"/>
 
-Navigate to "Virtual Machine" settings and select "Connect". Select "My IP" and "Request Access"
+Navigate to "Virtual Machine" settings and select "Connect". Select "My IP" and "Request Access".
 <p align="center"> 
-<img src="https://imgur.com/H75QpAw.png" height="80%" width="80%" alt="SIEM"/>
+<img src="https://imgur.com/fS62Wht.png" height="80%" width="80%" alt="SIEM"/>
 
+Maximum of three hours is allowed access using RDP Port 3389. The allowed source IP addresses is set to "Any". This can be changed under the Just-in-time VM access within Microsoft Defender for Cloud.
 
 ## Conclusion
