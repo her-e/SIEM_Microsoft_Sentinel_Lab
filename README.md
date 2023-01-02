@@ -295,7 +295,7 @@ Check Security for Windows Log and filter current log for EventID 4625 to analyz
 ## World Map Failed RDP Brute-force Attacks After 10 hours.
 
 <p align="center"> 
-<img src="https://imgur.com/E7Xnv4Z.png" height="80%" width="80%" alt="SIEM"/>
+<img src="https://imgur.com/wzWlTvG.png" height="80%" width="80%" alt="SIEM"/>
 
 ## Security Concerns, just-in-time (JIT) access
 Although we openned all ports through the Network Security Group (NSG) for this Microsoft Cloud Detection Lab (SIEM) to observe Brute-force attacks, we can reduce the attack surface by applying the just-in-time (JIT) access and re-configuring the Network Security Group to only enable certain ports.
