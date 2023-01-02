@@ -117,7 +117,7 @@ Add Log Analytics Workspace into Microsoft Sentinel.
 
 - This PowerShell script will extract the IP addresses from our Windows logs and send them to a third-party API ([ipgeolocation.io](https://ipgeolocation.io/)) to determine their latitude, longitude, state, country, etc., and then send it back to our resources where we’ll use these details to create a custom log.
 
-## Powershell
+## [PowerShell Script by /joshmadakor1 ←](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1)
 
 ```powershell
 # Get API key from here: https://ipgeolocation.io/
