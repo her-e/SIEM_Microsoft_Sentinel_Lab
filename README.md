@@ -6,7 +6,7 @@ In this lab, I am going to create a Honeypot to lure attackers to my Azure Virtu
 
 Lab Results:
 <p align="center">
-<img src="https://imgur.com/wzWlTvG.png" height="85%" width="85%" alt="SIEM"/>
+<img src="https://imgur.com/23vVkFZ.png" height="85%" width="85%" alt="SIEM"/>
 <br>
 
 ## Important:
@@ -295,7 +295,7 @@ Check Security for Windows Log and filter current log for EventID 4625 to analyz
 ## World Map Failed RDP Brute-force Attacks After 10 hours.
 
 <p align="center"> 
-<img src="https://imgur.com/wzWlTvG.png" height="80%" width="80%" alt="SIEM"/>
+<img src="https://imgur.com/23vVkFZ.png" height="80%" width="80%" alt="SIEM"/>
 
 ## Security Concerns, just-in-time (JIT) access
 Although we openned all ports through the Network Security Group (NSG) for this Microsoft Cloud Detection Lab (SIEM) to observe Brute-force attacks, we can reduce the attack surface by applying the just-in-time (JIT) access and re-configuring the Network Security Group to only enable certain ports.
