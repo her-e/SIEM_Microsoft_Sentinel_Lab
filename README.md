@@ -67,11 +67,12 @@ Make sure to create a Resource Group before creating Virtual Machine.
 <p align="center"> 
 <img src="https://imgur.com/9diVHlc.png" height="80%" width="80%" alt="SIEM"/>
 
-- Create Inbound Rule within **Network Security Group (NSG)** to observe Brute Force attacks into the VM (This will open all ports and allow all network traffic into the VM):
+Azure Security Feature: The creation of the virtual machine places our VM into a Virtual Network (vnet), which our Virtual machine is assigned an IP Address and Network Interface. We will use Network Security Group (NSG) to filter network traffic on Azure resources. Our Network Security Group will be based on dictating source and destination and network ports that are allowed or denied.
+
+- Create Inbound Rule within **Network Security Group (NSG)** to observe Brute-force attacks into the VM (This will open all ports and allow all network traffic into the VM):
 
 <p align="center"> 
 <img src="https://imgur.com/9hz1vUN.png" height="50%" width="40%" alt="SIEM"/>
-
 
 ## Create Log Analytics Workspace
 
@@ -112,14 +113,32 @@ Check Security for Windows Log and filter current log for EventID 4625 to analyz
 <p align="center"> 
 <img src="https://imgur.com/dL7fRcT.png" height="80%" width="80%" alt="SIEM"/>
 
-## World Map Failed RDP Brute Force Attacks After 1 hour.
+## World Map Failed RDP Brute-force Attacks After 1 hour.
 
 <p align="center"> 
 <img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="SIEM"/>
 
-## World Map Failed RDP Brute Force Attacks After 10 hours.
+## World Map Failed RDP Brute-force Attacks After 10 hours.
 
 <p align="center"> 
 <img src="https://imgur.com/WIRaGzQ.png" height="80%" width="80%" alt="SIEM"/>
+
+## Security Concerns, just-in-time access
+Although we openned all ports through the Network Security Group (NSG) for this Microsoft Cloud Detection Lab (SIEM) to observe Brute-force attacks, we can reduce the attack surface by applying the just-in-time (JIT) access and re-configuring the Network Security Group to only enable certain ports.
+
+The JIT security feature will only provide access when neccesarry based on time-based restrictions, RBAC roles, and Least Priviledge Principles.
+For example, if anyone wants access to the Virtual Machine, access will only be given based on Requests, IP Address, and Job roles.
+  
+<br/>
+Here is how to enable just-in-time (JIT) access. 
+
+Microsoft Defender for Cloud > Workload Protection > Just-in-time VM access > Not Configured > Select VM > Enable JIT.
+<p align="center"> 
+<img src="https://imgur.com/H75QpAw.png" height="80%" width="80%" alt="SIEM"/>
+
+Navigate to "Virtual Machine" settings and select "Connect". Select "My IP" and "Request Access"
+<p align="center"> 
+<img src="https://imgur.com/H75QpAw.png" height="80%" width="80%" alt="SIEM"/>
+
 
 ## Conclusion
