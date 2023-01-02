@@ -11,7 +11,7 @@ In this lab, I am going to configure Microsoft Sentinel, Log Analytics Workspace
 ## Important:
 
 We’re intentionally setting up a vulnerable ecosystem, some of these practices are simply unrealistic in a working real world solution.
-The whole intention is getting ourselves a practice ground to get our hands dirty and gain some knowledge with AD’s numerous vulnerabilities and defensive methodologies.
+The whole intention is getting ourselves a practice ground to get our hands dirty and gain some knowledge with Microsoft Azure resources and defensive methodologies.
   
 <br>
 
