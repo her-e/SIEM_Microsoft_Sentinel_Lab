@@ -263,7 +263,7 @@ while ($true)
 
 ```
 
-Run PowerShell Script to Geo data from attackers within Virtual Machine.
+Run PowerShell Script to obtain Geodata from attackers within Virtual Machine. (This is obtained from Windows Event Viewer Security Logs, EventID 4625)
 <p align="center"> 
 <img src="https://imgur.com/ByHFtub.png" height="80%" width="80%" alt="SIEM"/>
 
