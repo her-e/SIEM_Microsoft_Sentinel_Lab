@@ -1,6 +1,6 @@
 ## Microsoft Azure Sentinel (SIEM) - World Map with live Cyberattacks
 ## Description
-In this lab, I am going to create a Honeypot to lure attackers to my Azure Virtual Machine. This is an intentionally compromised system that allows attackers to exploit vulnerabilities for the sole purpose to study incidents. This lab will require the use of Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines, Kusto Query Language, Powershell, Third-Party API, Network Security Group (NSG), Just-in-time (JIT) access, and more. The purpose of conducting this lab is to understand Microsoft Azure resources by creating a cloud detection environment with Azure Virtual Machines and Windows Event Viewer Logs to analyze Brute-force attacks. After creating the Azure environment, we will run a PowerShell script that will obtain latitude, longitude, country, username data from IP addresses associated with the failed log on attempts. This lab is inspired by Josh Madakor and we will create an environment that can observe attacks.
+In this lab, I am going to create a Honeypot to lure attackers to my Azure Virtual Machine. This is an intentionally compromised system that allows attackers to exploit vulnerabilities for the sole purpose to study incidents. This lab will require the use of Microsoft Sentinel, Log Analytics Workspace, Azure Virtual Machines, Kusto Query Language, Powershell, Third-Party API, Network Security Group (NSG), Just-in-time (JIT) access, and more. The purpose of conducting this lab is to understand Microsoft Azure resources by creating a cloud detection environment with Azure Virtual Machines and Windows Event Viewer Logs to analyze Brute-force attacks. After creating the Azure environment, we will run a PowerShell script that will obtain latitude, longitude, country, username data from IP addresses associated with the failed log on attempts.
 
 Lab Results:
 <p align="center">
@@ -115,7 +115,7 @@ Add Log Analytics Workspace into Microsoft Sentinel.
 
 - This PowerShell script will extract the IP addresses from our Windows logs and send them to a third-party API ([ipgeolocation.io](https://ipgeolocation.io/)) to determine their latitude, longitude, state, country, etc., and then send it back to our resources where we’ll use these details to create a custom log.
 
-## [PowerShell Script by /joshmadakor1 ←](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1)
+## PowerShell Script
 
 ```powershell
 # Get API key from here: https://ipgeolocation.io/
