@@ -50,7 +50,7 @@ Microsoft Sentinel is tightly integrated with other cloud services. Not only can
 Microsoft Sentinel helps you enable end-to-end security operations. Including collection, detection, investigation, and response:
 
 <p align="center">
-<img src="https://imgur.com/azGVweJ.png" height="85%" width="85%" alt="SIEM"/>
+<img src="https://imgur.com/o7qYmVd.png" height="85%" width="85%" alt="SIEM"/>
 
 
 [Source: Microsoft](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-sentinel/2-what-is-azure-sentinel)
